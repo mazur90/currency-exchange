@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <title>Currency Exchange</title>
+</head>
+<header class="header">
+    <h1 class="header__title">Currency Exchange</h1>
+</header>
+
+<body class="body">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend>Currency Exchange</legend>
+
+            <p>
+                <label>
+                    <span class="form__labelText">
+                        wpisz kwotę w PLN:</span><input name="amount" class="form__field js-amount" type="number"
+                        required step="any" min="0.1">
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span class="form__labelText">
+                        przelicz na:</span>
+                    <select name="currency" class="form__field js-currency">
+                        <option value="CHF">
+                            Frank szwajcarski
+                        </option>
+                        <option value="EUR">
+                            Euro
+                        </option>
+                        <option value="USD">
+                            Dolar amerykański
+                        </option>
+                        <option value="GBP">
+                            Funt brytyjski
+                        </option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <span class="form__labelText">
+                        Twój wynik to:</span><input class="form__field js-result" disabled>
+                </label>
+            </p>
+        </fieldset>
+        <p>
+            <button class="form__button">Przelicz</button>
+            <button type="reset" class="form__button">Wyczyść</button>
+
+        </p>
+    </form>
+</body>
+
+</html>
