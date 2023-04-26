@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="eng">
 
 <head>
     <meta charset="UTF-8">
@@ -28,26 +28,27 @@
             <p>
                 <label>
                     <span class="form__labelText">
-                        wpisz kwotę w PLN:</span><input name="amount" class="form__field js-amount" type="number"
+                        Amount in PLN:</span>
+                        <input name="amount" class="form__field js-amount" type="number"
                         required step="any" min="0.1">
                 </label>
             </p>
             <p>
                 <label>
                     <span class="form__labelText">
-                        przelicz na:</span>
+                        Exchange to:</span>
                     <select name="currency" class="form__field js-currency">
                         <option value="CHF">
-                            Frank szwajcarski
+                            CHF
                         </option>
                         <option value="EUR">
-                            Euro
+                            EUR
                         </option>
                         <option value="USD">
-                            Dolar amerykański
+                            USD
                         </option>
                         <option value="GBP">
-                            Funt brytyjski
+                            GBP
                         </option>
                     </select>
                 </label>
@@ -55,13 +56,14 @@
             <p>
                 <label>
                     <span class="form__labelText">
-                        Twój wynik to:</span><input class="form__field js-result" disabled>
+                        Result:</span>
+                        <input class="form__field js-result" disabled>
                 </label>
             </p>
         </fieldset>
         <p>
-            <button class="form__button">Przelicz</button>
-            <button type="reset" class="form__button">Wyczyść</button>
+            <button class="form__button">Exchange</button>
+            <button type="reset" class="form__button">Reset</button>
 
         </p>
     </form>
