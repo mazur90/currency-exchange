@@ -3,10 +3,10 @@ let amountElement = document.querySelector(".js-amount");
 let currencyElement = document.querySelector(".js-currency");
 let resultElement = document.querySelector(".js-result");
 
-let CHF = 4.70;
-let EUR = 4.63;
-let USD = 4.23;
-let GBP = 5.26;
+let CHF = 4.71;
+let EUR = 4.64;
+let USD = 4.25;
+let GBP = 5.23;
 
 amountElement.focus();
 
