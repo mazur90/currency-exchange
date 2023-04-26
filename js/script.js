@@ -31,3 +31,9 @@ formElement.addEventListener("submit", (event) => {
 
     resultElement.innerHTML = (`${result.toFixed(2)} ${currency}`);
 });
+
+let reset = document.querySelector(".js-reset")
+reset.addEventListener("click", () => {
+resultElement.innerHTML = 0
+}
+);
