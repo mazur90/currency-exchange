@@ -29,12 +29,14 @@ html {
     width: 100%;
     max-width: 200px;
     display: inline-block;
+
 }
 
 .form__field {
     padding: 1px;
     width: 100%;
     max-width: 200px;
+    border-radius: 10px;
 }
 
 .form__button {
